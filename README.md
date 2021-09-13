@@ -1,12 +1,12 @@
-#EveryAction Take Home
+# EveryAction Take Home
 
-##Follow-up Questions
+## Follow-up Questions
 
-###How long, roughly, did you spend working on this project
+### How long, roughly, did you spend working on this project
 
 This took around 40 minutes.
 
-###Give the steps needed to deploy and run your code
+### Give the steps needed to deploy and run your code
 
 To run this script please download node, npm, and this repository. Then navigate to the path containing this newly downloaded repository and run npm install to download dependencies (The request library and dotenv). Next set the API_KEY environment variable to the to the key that you'll be using.
 
@@ -18,7 +18,7 @@ Given more time I would make this code more flexible. There are several other en
 
 In addition, we might want to do different things with the outputs from these request calls. As it stands now, the method only prints the information  that the assignment requires to the console, but what if we wanted to visualize this data or do something else with it? Rather than print it out I would pass an object with the relevant data to a callback that would be returned. Then I would export the method to be called by other modules where the data object would be manipulated later. This would ready the method to return the data from myriad calls, to be manipulated in whatever ways necessary for future reporting.
 
-###Outline a testing plan for this report
+### Outline a testing plan for this report
 
 To test this report I would first recommend printing out the status_code variable included in the listEmails method in the BroadCastEmails module. This will give you the http response code from your request where you can ensure that there are no client or server errors.
 
