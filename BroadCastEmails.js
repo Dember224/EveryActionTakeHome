@@ -24,4 +24,13 @@ const listEmails = function(){
   })
 }
 
+//The response body should look like this. 
+// {
+//   items: [
+//     { emailMessageId: 435, name: 'Split Email' },
+//     { emailMessageId: 434, name: 'Fundraising Email' },
+//     { emailMessageId: 433, name: 'Welcome to our email list!' }
+//   ],
+//   count: 3
+// }
 listEmails()
