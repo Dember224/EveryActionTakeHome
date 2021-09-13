@@ -4,7 +4,7 @@
 
 ### How long, roughly, did you spend working on this project
 
-This took around 40 minutes.
+This took around an hour. 
 
 ### Give the steps needed to deploy and run your code
 
