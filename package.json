@@ -1,0 +1,15 @@
+{
+  "name": "everyactiontakehome",
+  "version": "1.0.0",
+  "description": "An application for producing reports about emails sent to supporters using NGP. ",
+  "main": "BroadCastEmails.js",
+  "scripts": {
+    "test": "node BroadCastEmails"
+  },
+  "author": "Antoine Washington",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "request": "^2.88.2"
+  }
+}
