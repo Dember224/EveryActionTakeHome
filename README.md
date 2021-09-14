@@ -10,15 +10,15 @@ It took around 30 minutes to build the scripts, initiate the repository, and do 
 
 To run this script please download node, npm, and this repository. Then navigate to the path containing this newly downloaded repository and run npm install to download dependencies. Next set the API_KEY environment variable to the to the key that you'll be using.
 
-Running node BroadCastEmails on the command line will return the desired results. Thank You!
+Running node BroadCastEmails from the command line will return the desired results. Thank You!
 
 ### What could you do to improve your code for this project if you had more time?
 
-Given more time I would make this code more flexible. There are several other endpoints that could be called, according to the API Reference documentation. Supporters, for example, may be interested in reporting on contributions and disbursements as well as the Broadcast Emails data that we are currently reporting on. Being that the authentication steps are the same and the endpoint is what's changing, re-writing the function to include an endpoint parameter and using it to call whichever endpoint is needed in the uri, might be useful.
+Given more time I would make this code more flexible. There are several other endpoints that could be called, according to the API Reference documentation. Supporters, for example, may be interested in reporting on contributions and disbursements as well as the Broadcast Emails data that we are currently reporting on. Being that the authentication steps are the same and the endpoint is what's changing, re-writing the listEmails function to include an endpoint parameter and using it to pass different endpoints to the axios URL parameter, might be useful.
 
-In addition, we might want to do different things with the outputs from these request calls. As it stands now, the method only prints the information  that the assignment requires to the console, but what if we wanted to visualize this data or do something else with it? Rather than print it out I would pass an object with the relevant data to a callback or promise. Then I would export the method to be called by other modules where the data object would be manipulated later. This would ready the method to return the data from myriad calls, to be manipulated in whatever ways necessary for future reporting.
+In addition, we might want to do different things with the outputs from these request calls. As it stands now, the method only prints the information  that the assignment requires to the console, but what if we wanted to visualize this data or do something else with it? Rather than print it out I would pass an object with the relevant data to a callback or promise. Then I would export the method to be called by other modules where the data object would be manipulated later. This would ready the method to return the data from myriad calls, to be manipulated in whatever ways are necessary for future reporting.
 
-There were only 3 results returned in this call. Given more time, and a larger data set to perform testing, I would paginate to ensure the full list of messages are returned. According to the documentation a "nextPageLink" would typically be returned that should help with this. Additionaly a $top=50 parameter could be passed under normal circumstances that would enable us to set the size of the resultant object.
+There were only 3 results returned in this call. Given more time, and a larger data set to perform testing, I would paginate to ensure the full list of messages are returned. According to the documentation a "nextPageLink" would typically be returned that should help with this. Additionaly a $top= parameter could be passed as a query string under normal circumstances that would enable us to set the size of the resultant object.
 
 ### Outline a testing plan for this report
 
