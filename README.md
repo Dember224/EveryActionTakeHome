@@ -4,7 +4,7 @@
 
 ### How long, roughly, did you spend working on this project
 
-It took around 30 minutes to build the scripts, initiate the repository, and do other code work. Overall the project took me about an hour and 20 minutes as I was trying to be thorough in my answers to the response questions.
+It took around 40 minutes to build the scripts, initiate the repository, and do other code work. Overall the project took me about 1 hour and 30 minutes as I was trying to be thorough in my answers to the response questions.
 
 ### Give the steps needed to deploy and run your code
 
