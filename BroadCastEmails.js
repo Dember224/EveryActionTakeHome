@@ -11,9 +11,9 @@ const listEmails = function(){
       'Content-Type': 'application/json'
     }
   })
-  .then((r)=>{
-    const status_code = r.status_code;
-    const body = r.data;
+  .then((res)=>{
+    const status_code = res.status_code;
+    const body = res.data;
     body.items.map(x=>{
       const message_string = `${x.emailMessageId} ${x.name}`;
       console.log(message_string);
