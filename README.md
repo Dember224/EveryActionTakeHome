@@ -18,7 +18,7 @@ Given more time I would make this code more flexible. There are several other en
 
 In addition, we might want to do different things with the outputs from these request calls. As it stands now, the method only prints the information  that the assignment requires to the console, but what if we wanted to visualize this data or do something else with it? Rather than print it out I would pass an object with the relevant data to a callback or promise. Then I would export the method to be called by other modules where the data object would be manipulated later. This would ready the method to return the data from myriad calls, to be manipulated in whatever ways necessary for future reporting.
 
-There were only 3 results returned in this call. Given more time, and a larger data set to perform testing, I would paginate to ensure the full list of messages are returned. According to the documentation a "nextPageLink" would typically be returned that should help with this.
+There were only 3 results returned in this call. Given more time, and a larger data set to perform testing, I would paginate to ensure the full list of messages are returned. According to the documentation a "nextPageLink" would typically be returned that should help with this. Additionaly a $top=50 parameter could be passed under normal circumstances that would enable us to set the size of the resultant object.
 
 ### Outline a testing plan for this report
 
