@@ -8,7 +8,7 @@ const listEmails = function(){
   axios.get('https://api.myngp.com/v2/BroadcastEmails',{
     headers: {
       apiKey,
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
     }
   })
   .then((res)=>{
