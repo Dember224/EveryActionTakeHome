@@ -1,30 +1,32 @@
 require('dotenv').config();
 const request = require('request');
+const axios = require('axios');
 
 const apiKey = process.env.API_KEY;
 
-
 const listEmails = function(){
-  request({
-    uri: 'https://api.myngp.com/v2/BroadcastEmails',
-    headers:{
+  axios.get('https://api.myngp.com/v2/BroadcastEmails',{
+    headers: {
       apiKey,
       'Content-Type': 'application/json'
-    },
-    json:true
-  }, (e,r,b)=>{
-    if(e) return e;
+    }
+  })
+  .then((r)=>{
     const status_code = r.status_code;
-    b.items.map(x=>{
+    const body = r.data;
+    body.items.map(x=>{
       const message_string = `${x.emailMessageId} ${x.name}`;
       console.log(message_string);
     })
-    const total = b.count;
+    const total = body.count
     console.log(`Total: ${total}`);
+  })
+  .catch((e)=>{
+    console.log(e);
   })
 }
 
-//The response body should look like this. 
+//The response body should look like this.
 // {
 //   items: [
 //     { emailMessageId: 435, name: 'Split Email' },
